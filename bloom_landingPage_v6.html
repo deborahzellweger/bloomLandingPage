@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #fef9ed;
+      }
+
+      header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 145px;
+        padding: 30px 70px 0 70px;
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        display: inline;
+        font-family: "Mulish", sans-serif;
+        font-size: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+        /*identical to box height*/
+        letter-spacing: 0.2em;
+        color: black;
+        transition: all 200ms ease-in-out;
+      }
+
+      li:hover {
+        color: #0f89a4;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .header-left {
+        display: inline;
+        text-align: left;
+        width: 30%;
+        box-sizing: border-box;
+      }
+
+      .home {
+        margin-right: 80px;
+      }
+
+      .logo {
+        width: 200px;
+        height: auto;
+        padding: 0 50px;
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .header-right {
+        display: inline;
+        text-align: right;
+        width: 30%;
+        box-sizing: border-box;
+      }
+
+      .contact {
+        margin-left: 80px;
+      }
+
+      .introduction {
+        background-image: url(https://github.com/deborahzellweger/bloomLandingPage/blob/main/assets/Garlic_Illustration.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: 135%;
+        background-attachment: local;
+        background-position: -800px -90px;
+        padding: 0 0 270px 0;
+      }
+
+      p1 {
+        display: block;
+        text-align: center;
+        font-family: "Mulish", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 45px;
+        line-height: 60px;
+        padding: 200px 200px 90px 200px;
+        max-width: 1000px;
+        height: 180px;
+        margin: 0 auto;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-family: "Mulish", sans-serif;
+        font-size: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.2em;
+        color: #fef9ed;
+        background: #e15d30;
+        padding: 25px;
+        border: #e15d30;
+        border-radius: 30px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #0f89a4;
+        cursor: pointer;
+      }
+
+      .introPic {
+        max-width: 100%;
+        height: auto;
+        padding: 0px 0 270px 0;
+      }
+
+      .testimonial {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 220px;
+        padding: 0 0 180px 0;
+        background-image: url(https://github.com/deborahzellweger/bloomLandingPage/blob/main/assets/Banana_Illustration.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: 180%;
+        background-position: -180px 0px;
+      }
+
+      .testimonialPic {
+        display: block;
+        height: 547.9596557617188px;
+        width: 365px;
+        border-radius: 2037px;
+        padding: 0 0 50px 0;
+      }
+
+      p2 {
+        font-family: "Mulish", sans-serif;
+        font-style: thin;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 38px;
+        display: block;
+        text-align: left;
+        width: 770px;
+      }
+
+      p3 {
+        font-family: "Mulish", sans-serif;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #e15d30;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .garlic {
+        width: 1417px;
+        height: 990px;
+      }
+
+      .footer {
+        background-color: #e15d30;
+        padding: 50px 70px 50px 70px;
+        display: flex;
+        align-items: center;
+      }
+
+      h1 {
+        display: inline;
+        font-family: "Mulish", sans-serif;
+        font-size: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22.5px;
+        /*identical to box height*/
+        letter-spacing: 0.2em;
+        color: #fef9ed;
+      }
+
+      p4 {
+        font-family: "Mulish", sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 13px;
+        line-height: 150%;
+        color: #fef9ed;
+      }
+
+      .footer-left {
+        display: inline;
+        text-align: left;
+        width: 30%;
+        box-sizing: border-box;
+      }
+      .socials {
+        padding: 10px 0 0 0;
+      }
+
+      .li-socials {
+        font-size: 12px;
+        color: #fef9ed;
+        font-weight: 100;
+        padding: 18px 10px 0 0;
+      }
+
+      .logomark {
+        display: block;
+        width: 20px;
+        height: 73px;
+        margin: 0 auto;
+      }
+
+      .footer-right {
+        display: inline;
+        text-align: right;
+        width: 30%;
+        box-sizing: border-box;
+      }
+
+      .ul-legal {
+        display: inline-grid;
+        text-align: right;
+      }
+
+      .li-legal {
+        padding: 7px 0 0 0;
+        font-size: 12px;
+        color: #fef9ed;
+        font-weight: 100;
+      }
+
+      .li-legal-imprint {
+        font-size: 12px;
+        color: #fef9ed;
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <ul>
+          <li class="home">HOME</li>
+          <li class="services">SERVICES</li>
+        </ul>
+      </div>
+      <img
+        class="logo"
+        src="https://github.com/deborahzellweger/bloomLandingPage/blob/main/assets/Logo_Tangerine.png?raw=true"
+      />
+      <div class="header-right">
+        <ul>
+          <li class="about-me">ABOUT ME</li>
+          <li class="contact">CONTACT</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="introduction">
+      <p1>
+        Enjoy food. Forget diets. Start your journey of self-discovery today and
+        live the life you've always wanted.
+      </p1>
+      <button>BOOK FREE CONSULTATION</button>
+    </div>
+    <div>
+      <img
+        class="introPic"
+        src="https://github.com/deborahzellweger/bloomLandingPage/blob/main/assets/Intro_Picture.jpg?raw=true"
+      />
+    </div>
+
+    <div class="testimonial">
+      <img
+        class="testimonialPic"
+        src="https://github.com/deborahzellweger/bloomLandingPage/blob/main/assets/Testimonial_Pic.jpg?raw=true"
+      />
+      <div class="testimonial-quote">
+        <p2>
+          Natalie's consultation changed my life. I couldn't have done it
+          without her and can't thank her enough.
+        </p2>
+        <br />
+        <p3>Deborah Zellweger</p3>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <h1>BLOOM</h1>
+        <br />
+        <p4>Consultancy for Nutritional Psychology</p4> <br />
+        <ul class="socials">
+          <li class="li-socials">IN</li>
+          <li class="li-socials">LI</li>
+          <li class="li-socials">FB</li>
+        </ul>
+      </div>
+      <img
+        class="logomark"
+        src="https://github.com/deborahzellweger/bloomLandingPage/blob/main/assets/LogoMark_Vanilla.png?raw=true"
+      />
+      <div class="footer-right">
+        <ul class="ul-legal">
+          <li class="li-legal-imprint">IMPRINT</li>
+          <li class="li-legal">TERMS OF USE</li>
+          <li class="li-legal">COPYRIGHT © 2023</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      let button = document.querySelector("button");
+      button.addEventListener("click", emailAddress);
+
+      function emailAddress() {
+        let name = prompt("What's your name?");
+        let mailAddress = prompt("What's your email address?");
+        let p1 = document.querySelector("p1");
+        alert(
+          (p1.innerHTML = `Thanks ${name}! We'll be in touch with available dates and times shortly.`)
+        );
+      }
+    </script>
+  </body>
+</html>
